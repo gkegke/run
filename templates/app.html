@@ -1,0 +1,73 @@
+{{ define "app" }}
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <title>Root</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link rel=stylesheet href="/s/css/app.css" />
+
+    </head>
+    <body>
+
+        <div id=progress>
+            <div id=current></div>
+        </div>
+
+        <div id=recent>
+            <div id=rec_title>recent: </div>
+        </div>
+        <div id=errors>
+            fk u
+        </div>
+        <div id=content>
+
+            <form id=queryForm action="/command/" method=POST>
+            <input id=query name=command type=text value="" autofocus placeholder="type your command here..">
+            </form>
+
+        </div>
+        <div id=commands>
+            {{ range .Commands }}
+            <div class=com>{{ . }}</div>
+            {{ end }}
+        </div>
+
+        <div id=kanban>
+            <div class=kbw>
+                <div class=kbt>Future</div>
+                <div id=kb1 class=kb contenteditable>
+                    asdkglasdg
+                </div>
+            </div>
+            <div class=kbw>
+                <div class=kbt>Preparing</div>
+                <div id=kb2 class=kb contenteditable>
+                    asdkglasdg
+                </div>
+            </div>
+             <div class=kbw>
+                <div class=kbt>Doing</div>
+                <div id=kb3 class=kb contenteditable>
+                    asdkglasdg
+                </div>
+            </div>
+            <div class=kbw>
+                <div class=kbt>Completed</div>
+                <div id=kb4 class=kb contenteditable>
+                    asdkglasdg
+                </div>
+            </div>
+ 
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="/s/js/app.js"></script>
+
+    </body>
+</html>
+
+{{ end }}

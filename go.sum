@@ -1,0 +1,4 @@
+github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/webview/webview v0.0.0-20230210061304-7b40e46d97e9 h1:SPyWnfToUom3xNh3dKGkq1ZV7pw+VSWDcfVrUM1nRWs=
+github.com/webview/webview v0.0.0-20230210061304-7b40e46d97e9/go.mod h1:rpXAuuHgyEJb6kXcXldlkOjU6y4x+YcASKKXJNUhh0Y=
